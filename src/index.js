@@ -3,10 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {Provider} from 'react-redux'
+import store from './redux/store'
 
+// WRAPPING THE APP COMPONENT IN THE PROVIDER COMPONENT GIVES THE ENTIRE APPLICATION ACCESS TO WHATEVER IS IN THE STORE, BECAUSE WE PASS IN THE STORE AS A PROP TO THE PROVIDER, AND WRAP OUR PROVIDER AROUND OUR APP
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

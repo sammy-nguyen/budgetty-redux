@@ -16,7 +16,7 @@ class Chart2 extends Component {
         .reduce((total, p) => total + p.price, 0)
     })
     return (
-      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: 250 }}>
         <h6>Spending Breakdown</h6>
         <Pie data={{
           labels,

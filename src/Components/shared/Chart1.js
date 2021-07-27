@@ -11,7 +11,7 @@ class Chart1 extends Component {
     }, 0)
     const remainingBudget = (budgetLimit - moneySpent) >= 0 ? (budgetLimit - moneySpent) : 0;
     return (
-      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: 250 }}>
         <h6>Limit: ${budgetLimit}</h6>
         <Doughnut data={{
           labels: [
